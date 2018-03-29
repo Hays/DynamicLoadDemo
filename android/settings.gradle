@@ -1,0 +1,3 @@
+rootProject.name = 'DynamicLoadDemo'
+
+include ':app'
