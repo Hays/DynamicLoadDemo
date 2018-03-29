@@ -1,0 +1,46 @@
+//
+//  RNFuncViewController.m
+//  DynamicLoadDemo
+//
+//  Created by Hays on 29/03/2018.
+//  Copyright © 2018 Facebook. All rights reserved.
+//
+
+#import "RNFuncViewController.h"
+#import <React/RCTRootView.h>
+
+@interface RNFuncViewController ()<RCTBridgeDelegate>
+
+@property(nonatomic, copy) NSString *bundleJS;
+@property(nonatomic, copy) NSString *module;
+
+@end
+
+@implementation RNFuncViewController
+
+- (instancetype)initWithBundleJS:(NSString *)bundleJS module:(NSString *)module
+{
+  self = [super init];
+  if (self) {
+    self.bundleJS = bundleJS;
+    self.module = module;
+  }
+  return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:self.module initialProperties:nil];
+  self.view = rootView;
+}
+
+#pragma mark - RCTBridgeDelegate
+
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+{
+  NSString *path = [[NSBundle mainBundle] pathForResource:self.bundleJS ofType:@"jsbundle"];
+  return [NSURL URLWithString:path];
+}
+
+@end

@@ -12,6 +12,12 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+@interface AppDelegate()
+
+@property(nonatomic, strong) UIViewController *rootViewController;
+
+@end
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -29,6 +35,7 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
+  self.rootViewController = rootViewController;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;

@@ -13,7 +13,8 @@ import {
   Text,
   View,
   Button,
-  NativeModules
+  NativeModules,
+  AppRegistry
 } from 'react-native';
 
 const {
@@ -21,17 +22,13 @@ const {
 } = NativeModules
 
 type Props = {};
-export default class App extends Component < Props > {
+export default class Plugin1 extends Component < Props > {
   render() {
     return (
       <View style={styles.container}>
-        <Button title="Plugin1" onPress={() => {
-          PluginModule.openPlugin1()
-        }} />
-
-        <Button title="Plugin2" onPress={() => {
-          PluginModule.openPlugin2()
-        }} />
+        <Text style={styles.welcome}>
+          Hello World! This is the plugin one!
+        </Text>
       </View>
     );
   }
@@ -55,3 +52,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+AppRegistry.registerComponent('plugin1', () => Plugin1);

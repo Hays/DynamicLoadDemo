@@ -8,9 +8,11 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <React/RCTRootView.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
+@property(nonatomic, readonly) UIViewController *rootViewController;
 
 @end
