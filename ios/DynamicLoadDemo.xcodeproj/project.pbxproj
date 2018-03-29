@@ -37,10 +37,10 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		6E2495B6206CD278008BF41C /* PluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2495B5206CD278008BF41C /* PluginModule.m */; };
 		6E2495B9206CDAB0008BF41C /* RNFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2495B8206CDAB0008BF41C /* RNFuncViewController.m */; };
-		6E2495BF206CEA21008BF41C /* plugin2.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495BB206CEA21008BF41C /* plugin2.jsbundle.meta */; };
-		6E2495C0206CEA21008BF41C /* plugin1.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495BC206CEA21008BF41C /* plugin1.jsbundle.meta */; };
-		6E2495C1206CEA21008BF41C /* plugin2.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495BD206CEA21008BF41C /* plugin2.jsbundle */; };
-		6E2495C2206CEA21008BF41C /* plugin1.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495BE206CEA21008BF41C /* plugin1.jsbundle */; };
+		6E2495C7206D0C0F008BF41C /* plugin1.ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495C3206D0C0F008BF41C /* plugin1.ios.jsbundle */; };
+		6E2495C8206D0C0F008BF41C /* plugin2.ios.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495C4206D0C0F008BF41C /* plugin2.ios.jsbundle.meta */; };
+		6E2495C9206D0C0F008BF41C /* plugin2.ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495C5206D0C0F008BF41C /* plugin2.ios.jsbundle */; };
+		6E2495CA206D0C0F008BF41C /* plugin1.ios.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
@@ -349,10 +349,10 @@
 		6E2495B5206CD278008BF41C /* PluginModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginModule.m; sourceTree = "<group>"; };
 		6E2495B7206CDAB0008BF41C /* RNFuncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNFuncViewController.h; sourceTree = "<group>"; };
 		6E2495B8206CDAB0008BF41C /* RNFuncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFuncViewController.m; sourceTree = "<group>"; };
-		6E2495BB206CEA21008BF41C /* plugin2.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = plugin2.jsbundle.meta; sourceTree = "<group>"; };
-		6E2495BC206CEA21008BF41C /* plugin1.jsbundle.meta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin1.jsbundle.meta; sourceTree = "<group>"; };
-		6E2495BD206CEA21008BF41C /* plugin2.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin2.jsbundle; sourceTree = "<group>"; };
-		6E2495BE206CEA21008BF41C /* plugin1.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin1.jsbundle; sourceTree = "<group>"; };
+		6E2495C3206D0C0F008BF41C /* plugin1.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin1.ios.jsbundle; sourceTree = "<group>"; };
+		6E2495C4206D0C0F008BF41C /* plugin2.ios.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = plugin2.ios.jsbundle.meta; sourceTree = "<group>"; };
+		6E2495C5206D0C0F008BF41C /* plugin2.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin2.ios.jsbundle; sourceTree = "<group>"; };
+		6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = plugin1.ios.jsbundle.meta; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
@@ -561,10 +561,10 @@
 		6E2495BA206CEA21008BF41C /* bundles */ = {
 			isa = PBXGroup;
 			children = (
-				6E2495BB206CEA21008BF41C /* plugin2.jsbundle.meta */,
-				6E2495BC206CEA21008BF41C /* plugin1.jsbundle.meta */,
-				6E2495BD206CEA21008BF41C /* plugin2.jsbundle */,
-				6E2495BE206CEA21008BF41C /* plugin1.jsbundle */,
+				6E2495C3206D0C0F008BF41C /* plugin1.ios.jsbundle */,
+				6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */,
+				6E2495C5206D0C0F008BF41C /* plugin2.ios.jsbundle */,
+				6E2495C4206D0C0F008BF41C /* plugin2.ios.jsbundle.meta */,
 			);
 			name = bundles;
 			path = ../bundles;
@@ -1086,11 +1086,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				6E2495C1206CEA21008BF41C /* plugin2.jsbundle in Resources */,
-				6E2495BF206CEA21008BF41C /* plugin2.jsbundle.meta in Resources */,
+				6E2495C8206D0C0F008BF41C /* plugin2.ios.jsbundle.meta in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				6E2495C0206CEA21008BF41C /* plugin1.jsbundle.meta in Resources */,
-				6E2495C2206CEA21008BF41C /* plugin1.jsbundle in Resources */,
+				6E2495C7206D0C0F008BF41C /* plugin1.ios.jsbundle in Resources */,
+				6E2495CA206D0C0F008BF41C /* plugin1.ios.jsbundle.meta in Resources */,
+				6E2495C9206D0C0F008BF41C /* plugin2.ios.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

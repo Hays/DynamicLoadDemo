@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE(PluginModule);
 
 RCT_EXPORT_METHOD(openPlugin1) {
   NSLog(@"test by Hays open plugin 1.");
-  RNFuncViewController *vc = [[RNFuncViewController alloc] initWithBundleJS:@"plugin1" module:@"plugin1"];
+  RNFuncViewController *vc = [[RNFuncViewController alloc] initWithBundleJS:@"plugin1.ios" module:@"plugin1"];
   UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
   UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
   vc.navigationItem.leftBarButtonItem = backButton;
@@ -35,7 +35,7 @@ RCT_EXPORT_METHOD(openPlugin1) {
 
 RCT_EXPORT_METHOD(openPlugin2) {
   NSLog(@"test by Hays open plugin 2.");
-  RNFuncViewController *vc = [[RNFuncViewController alloc] initWithBundleJS:@"plugin2" module:@"plugin2"];
+  RNFuncViewController *vc = [[RNFuncViewController alloc] initWithBundleJS:@"plugin2.ios" module:@"plugin2"];
   UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
   UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
   vc.navigationItem.leftBarButtonItem = backButton;
