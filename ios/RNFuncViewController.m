@@ -39,8 +39,12 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
+//  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//  NSString *docDir = [paths objectAtIndex:0];
   NSString *path = [[NSBundle mainBundle] pathForResource:self.bundleJS ofType:@"jsbundle"];
+//  NSLog(@"path : %@", path);
   return [NSURL URLWithString:path];
+//  return [NSURL fileURLWithPath:[docDir stringByAppendingFormat:@"/%@.jsbundle", self.bundleJS]];
 }
 
 @end
