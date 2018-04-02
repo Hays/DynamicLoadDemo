@@ -29,6 +29,12 @@ export default class Plugin1 extends Component < Props > {
         <Text style={styles.welcome}>
           Hello World! This is the plugin one!
         </Text>
+        <Text style={styles.instructions}>
+        {this.props.param1}
+        </Text>
+        <Text style={styles.instructions}>
+        {this.props.param2}
+        </Text>
       </View>
     );
   }

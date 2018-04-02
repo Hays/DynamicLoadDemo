@@ -31,7 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:self.module initialProperties:nil];
+  NSDictionary *dict = @{@"param1": @"test by Hays !!!", @"param2": @"123"};
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:self.module initialProperties:dict];
   self.view = rootView;
 }
 
