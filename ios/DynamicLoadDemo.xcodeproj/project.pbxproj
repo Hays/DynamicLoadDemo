@@ -42,8 +42,11 @@
 		6E2495C9206D0C0F008BF41C /* plugin2.ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495C5206D0C0F008BF41C /* plugin2.ios.jsbundle */; };
 		6E2495CA206D0C0F008BF41C /* plugin1.ios.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */; };
 		6E2495DE206DD426008BF41C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2495DD206DD426008BF41C /* assets */; };
+		6EF626A82079ABE1000C4796 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF626A72079ABE1000C4796 /* WKWebViewController.m */; };
+		6EF626CF2079B150000C4796 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EF626CE2079B14F000C4796 /* index.html */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C068F044BF9441162FC3F33D /* libPods-DynamicLoadDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF89ECBCE3DD3AF8DCAF923 /* libPods-DynamicLoadDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -345,6 +348,7 @@
 		2D02E47B1E0B4A5D006451C7 /* DynamicLoadDemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DynamicLoadDemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* DynamicLoadDemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DynamicLoadDemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF89ECBCE3DD3AF8DCAF923 /* libPods-DynamicLoadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DynamicLoadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6E2495B4206CD278008BF41C /* PluginModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginModule.h; sourceTree = "<group>"; };
 		6E2495B5206CD278008BF41C /* PluginModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginModule.m; sourceTree = "<group>"; };
@@ -353,10 +357,15 @@
 		6E2495C3206D0C0F008BF41C /* plugin1.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin1.ios.jsbundle; sourceTree = "<group>"; };
 		6E2495C4206D0C0F008BF41C /* plugin2.ios.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = plugin2.ios.jsbundle.meta; sourceTree = "<group>"; };
 		6E2495C5206D0C0F008BF41C /* plugin2.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin2.ios.jsbundle; sourceTree = "<group>"; };
-		6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = plugin1.ios.jsbundle.meta; sourceTree = "<group>"; };
+		6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = text; path = plugin1.ios.jsbundle.meta; sourceTree = "<group>"; };
 		6E2495DD206DD426008BF41C /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		6EF626A62079ABE0000C4796 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		6EF626A72079ABE1000C4796 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		6EF626CE2079B14F000C4796 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../index.html; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		812BC61D0A879BCD106A1B30 /* Pods-DynamicLoadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicLoadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicLoadDemo/Pods-DynamicLoadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8FFB9E7855875277CE9A85AB /* Pods-DynamicLoadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicLoadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicLoadDemo/Pods-DynamicLoadDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -386,6 +395,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				C068F044BF9441162FC3F33D /* libPods-DynamicLoadDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +517,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				6E2495B7206CDAB0008BF41C /* RNFuncViewController.h */,
 				6E2495B8206CDAB0008BF41C /* RNFuncViewController.m */,
+				6EF626A62079ABE0000C4796 /* WKWebViewController.h */,
+				6EF626A72079ABE1000C4796 /* WKWebViewController.m */,
 			);
 			name = DynamicLoadDemo;
 			sourceTree = "<group>";
@@ -538,8 +550,18 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				4AF89ECBCE3DD3AF8DCAF923 /* libPods-DynamicLoadDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39B471725B5D92BA7FCFD5EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				812BC61D0A879BCD106A1B30 /* Pods-DynamicLoadDemo.debug.xcconfig */,
+				8FFB9E7855875277CE9A85AB /* Pods-DynamicLoadDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -563,6 +585,7 @@
 		6E2495BA206CEA21008BF41C /* bundles */ = {
 			isa = PBXGroup;
 			children = (
+				6EF626CE2079B14F000C4796 /* index.html */,
 				6E2495DD206DD426008BF41C /* assets */,
 				6E2495C3206D0C0F008BF41C /* plugin1.ios.jsbundle */,
 				6E2495C6206D0C0F008BF41C /* plugin1.ios.jsbundle.meta */,
@@ -618,6 +641,7 @@
 				00E356EF1AD99517003FC87E /* DynamicLoadDemoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				39B471725B5D92BA7FCFD5EB /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -669,10 +693,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DynamicLoadDemo" */;
 			buildPhases = (
+				49BF2FC9C70A7631FA67E19A /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				E5AA5C0CEFF8A53376B4E8E6 /* [CP] Embed Pods Frameworks */,
+				047FCE4E55E2297C1DBD76D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1093,6 +1120,7 @@
 				6E2495DE206DD426008BF41C /* assets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				6E2495C7206D0C0F008BF41C /* plugin1.ios.jsbundle in Resources */,
+				6EF626CF2079B150000C4796 /* index.html in Resources */,
 				6E2495CA206D0C0F008BF41C /* plugin1.ios.jsbundle.meta in Resources */,
 				6E2495C9206D0C0F008BF41C /* plugin2.ios.jsbundle in Resources */,
 			);
@@ -1130,6 +1158,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		047FCE4E55E2297C1DBD76D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicLoadDemo/Pods-DynamicLoadDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1143,6 +1186,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		49BF2FC9C70A7631FA67E19A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicLoadDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5AA5C0CEFF8A53376B4E8E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicLoadDemo/Pods-DynamicLoadDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1159,6 +1235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF626A82079ABE1000C4796 /* WKWebViewController.m in Sources */,
 				6E2495B9206CDAB0008BF41C /* RNFuncViewController.m in Sources */,
 				6E2495B6206CD278008BF41C /* PluginModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
@@ -1250,6 +1327,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812BC61D0A879BCD106A1B30 /* Pods-DynamicLoadDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1268,6 +1346,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FFB9E7855875277CE9A85AB /* Pods-DynamicLoadDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;

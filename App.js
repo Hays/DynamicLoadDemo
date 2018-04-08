@@ -32,6 +32,9 @@ export default class App extends Component < Props > {
         <Button title="Plugin2" onPress={() => {
           PluginModule.openPlugin2()
         }} />
+        <Button title="Html" onPress={() => {
+          PluginModule.openHtml()
+        }} />
       </View>
     );
   }

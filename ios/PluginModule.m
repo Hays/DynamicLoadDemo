@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "RNFuncViewController.h"
+#import "WKWebViewController.h"
 
 @interface PluginModule()
 
@@ -36,6 +37,16 @@ RCT_EXPORT_METHOD(openPlugin1) {
 RCT_EXPORT_METHOD(openPlugin2) {
   NSLog(@"test by Hays open plugin 2.");
   RNFuncViewController *vc = [[RNFuncViewController alloc] initWithBundleJS:@"plugin2.ios" module:@"plugin2"];
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+  UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
+  vc.navigationItem.leftBarButtonItem = backButton;
+  [[(AppDelegate *)[UIApplication sharedApplication].delegate rootViewController] presentViewController:nav animated:YES completion:nil];
+}
+
+RCT_EXPORT_METHOD(openHtml) {
+  NSLog(@"test by Hays open html.");
+  NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+  WKWebViewController *vc = [[WKWebViewController alloc] initWithPath:htmlPath];
   UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
   UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
   vc.navigationItem.leftBarButtonItem = backButton;

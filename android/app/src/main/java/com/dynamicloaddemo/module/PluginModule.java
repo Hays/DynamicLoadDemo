@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.util.Log;
 
 import com.dynamicloaddemo.RNFuncActivity;
+import com.dynamicloaddemo.WebViewActivity;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -37,6 +38,14 @@ public class PluginModule extends ReactContextBaseJavaModule {
         Intent intent = new Intent(getReactApplicationContext(), RNFuncActivity.class);
         intent.putExtra("bundleJS", "assets://plugin2.android.jsbundle");
         intent.putExtra("module", "plugin2");
+        getReactApplicationContext().startActivity(intent);
+    }
+
+    @ReactMethod
+    public void openHtml() {
+        Log.i("HaysLog", "test by Hays open html.");
+        Intent intent = new Intent(getReactApplicationContext(), WebViewActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         getReactApplicationContext().startActivity(intent);
     }
 }
